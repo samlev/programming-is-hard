@@ -12,7 +12,6 @@ again? Let's say you have to write a program for selling hot dogs at the Cat Pic
 Lover's Convention. You can only sell as many hot dogs as you have ready, and
 any others have to go into the hot dog order queue.
 
-
 ```javascript
 if (hotdogs_ready > 0) {
     hotdogs_ready = hotdogs_ready - 1;
@@ -128,8 +127,7 @@ for (customers = 50; customers > 0; customers = customers - 1) {
 }
 ```
 
-###What? There's semi-colons in the condition! You're setting customers to 50 in
-the condition, so it will never reach 0! It's all so confusing!###
+###What? There's semi-colons in the condition! You're setting customers to 50 in the condition, so it will never reach 0! It's all so confusing!
 Settle down, the world hasn't ended. This is how a `for` loop works - it has
 three parts in the condition statement. 
 
