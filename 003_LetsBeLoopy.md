@@ -62,7 +62,7 @@ while (customers > 0) {
 }
 ```
 
-###Hold up! While? I just got used to if! How does this work?
+###Hold up! `while`? I just got used to `if`! How does this work?
 Much like an `if`, a `while` tells the computer to do everything in a code
 block. Unlike an `if`, the computer will keep doing everything in the code block
 over and over again, until the condition (the part in the brackets) isn't true
@@ -112,7 +112,7 @@ and it still happens to me sometimes. It's nothing to be ashamed of, but it is
 something to be wary of. When it happens, the computer often won't tell you
 until it runs out of memory, and crashes.
 
-###Is there any way to make sure that this never happens?
+###Is there any way to make sure that this won't happen?
 Well there is another type of loop. It's very similar to a `while` loop, but it
 doesn't look as nice. In fact it looks a little scary the first time you see it.
 Well your first look is now; let's re-write the program with a `for` loop.
@@ -190,66 +190,6 @@ do to get there. A `for` loop makes this easier. Remember what I said about
 there not being a 'right' way to write code? This is one of those times where
 you just have to pick whatever you think is best for the situation.
 
-###Is there anything else I need to know about loops?
-Yes, one last thing. There is a special command which can help you out when
-you're looping through lots of things:
-
-* **break** - Stops the loop. Even in the middle of the code block, this will
-immediately break out of the loop, and the program will behave like the loop
-finished.
-
-###Can I see this in action then?
-Why, sure you can. Let's go back to the hot dog example. Suppose that there's a
-limit to the number of hot dogs available in one day, so once you reach that
-limit, everyone else goes hungry. It's not worth going through the loop for
-everyone else if we run out of hot dogs, so we break out.
-
-```javascript
-hotdogs_total = 35;
-
-for (customers = 50; customers > 0; customers = customers - 1) {
-    if (hotdogs_total == 0) {
-        break;
-    }
-        
-    if (hotdogs_ready > 0) {
-        hotdogs_ready = hotdogs_ready - 1;
-    } else {
-        hotdogs_ordered = hotdogs_ordered + 1;
-    }
-    
-    hotdogs_total = hotdogs_total - 1;
-}
-```
-
-###You did it again... you threw in stuff I don't understand! What is `==`?
-If there is only one equals sign `=` (e.g. `Jeff = 5;`), then you are telling
-the computer to set a variable to a particular value. Read it as a statement
-like "Jeff is now 5", or "`hotdogs_ready` is now `hotdogs_ready - 1`".
-
-The left side always has to be a variable, otherwise the computer will stop
-running your program (and won't even be polite about it). The right side can be
-anything with a value (like a number, another variable, some maths, etc.)
-
-###OK, and the `==` that I asked you about?
-If there are two equals signs `==` (e.g. `Jeff == 5`), the computer uses that to
-compare both sides. Think of if like a question that the computer is asking
-itself. "Is Jeff equal to 5?" or "is `hotdogs_total` equal to `0`?".
-
-We have actually already met other comparison symbols, such as "Greater than"
-(`>`),  and "Greater than or equal to" (`>=`). When they are in an `if`
-statement, or a loop, you a telling the computer to ask itself the question, and
-run the code only if the answer is 'yes'.
-
-The most common comparison symbols are:
-
-* `==` **Equal to**: `Jeff == 5` (Is Jeff equal to 5?)
-* `<` **Less than**: `Jeff < 5` (Is Jeff less than 5?)
-* `>` **Greater than**: `Jeff > 5` (Is Jeff greater than 5?)
-* `<=` **Less than or equal to**: `Jeff <= 5` (Is Jeff less than or equal to 5?)
-* `>=` **Greater than or equal to**: `Jeff >= 5` (Is Jeff greater than or equal to 5?)
-* `!=` **Not equal to**: `Jeff != 5` (Is Jeff not equal to 5?)
-
 ###Please! No more new information! I need time to understand all of this!
 Don't worry. All there is left to do is revision.
 
@@ -265,9 +205,6 @@ need to do.
 looping until it crashes.
 * A `for` statement is like a `while` statement, but it's harder to get caught
 in an infinite loop.
-* You can exit a loop at any time by using the break command.
-* `=` sets a variable's value, and `==` compares values.
-* Other symbols that compare values are `<`, `>`, `<=`, `>=`, and `!=`.
 
 ###How do I practice this?
 
@@ -278,34 +215,6 @@ in an infinite loop.
 but stops if the total gets over 100.
 
 ###Extra Credit
-Here is a program designed to redistribute Perry's wealth. Perry is generous,
-but he doesn't want Steve to be richer than him. The program runs for a long
-time, but Steve never gets any richer, and Perry never gets any poorer. Fix the
-program.
-
-```javascript
-Steve = 2;
-Perry = 70;
- 
-while (Steve < Perry) {
-    Steve == Steve + 1;
-    Perry == Perry - 1;
-}
-```
-
-Perry remembers that he has a hot date tonight, and needs at least $50 to
-impress her. Add a break to the program so that it stops when Perry has $50.
-
-What is the value of total after this program runs? Why?
-
-```javascript
-total = 0;
-
-for (count = 0; count > 10; count = count + 1) {
-    total = total + count;
-}
-```
-
 Even though infinite loops are harder to make with `for` loops, they are still
 possible. Which one(s) of these would cause an infinite loop, and which one(s)
 would never run their code? Why?
