@@ -31,13 +31,13 @@ if (hotdogs_ready > 0) {
 }
  
 if (hotdogs_ready > 0) {
-    hotdogs_ready = hotdogs_ready – 1;
+    hotdogs_ready = hotdogs_ready - 1;
 } else {
     hotdogs_ordered = hotdogs_ordered + 1;
 }
  
 if (hotdogs_ready > 0) {
-    hotdogs_ready = hotdogs_ready – 1;
+    hotdogs_ready = hotdogs_ready - 1;
 } else {
     hotdogs_ordered = hotdogs_ordered + 1;
 }
@@ -58,7 +58,7 @@ while (customers > 0) {
         hotdogs_ordered = hotdogs_ordered + 1;
     }
     
-    customers = customers – 1;
+    customers = customers - 1;
 }
 ```
 
@@ -138,7 +138,7 @@ Second, you tell it a condition to test for (`customers > 0`); this is like the
 condition in the while loop - it is checked every time before the code in the
 loop is run, and the code in the loop runs only if the condition is true. 
 
-Finally, you tell it what to do at the end of each loop (`customers = customers – 1`);
+Finally, you tell it what to do at the end of each loop (`customers = customers - 1`);
 this is run every time after the code in the loop finishes, but before the
 condition is checked again. This lets you set things up easily for the next loop.
 
@@ -218,7 +218,7 @@ for (customers = 50; customers > 0; customers = customers - 1) {
         hotdogs_ordered = hotdogs_ordered + 1;
     }
     
-    hotdogs_total = hotdogs_total – 1;
+    hotdogs_total = hotdogs_total - 1;
 }
 ```
 
