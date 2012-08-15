@@ -91,13 +91,13 @@ while (there are more than 0 customers) {
 ```
 
 ###Hey I just noticed! You can put code blocks inside code blocks!
-Why, yes you can! You could have a loop inside a loop, or an if inside an if, or
-all sorts of crazy things. Mostly programming is about putting all these parts
+Why, yes you can! You could have a loop inside a loop, or an `if` inside an `if`,
+or all sorts of crazy things. Mostly programming is about putting all these parts
 together in a way that does what you want it to. Remember that there's rarely a
 'right' way to do anything, but some problems have a 'best' solution. Usually it
 doesn't matter which way you do something, so long as it works.
 
-###Cool! What's next? That while loop was a cinch!
+###Cool! What's next? That `while` loop was a cinch!
 Hold your horses there. There's a couple more things that I need to point out
 about `while` loops. On line 10, we take one off `customers`. When we get to the
 end of the code block, the computer loops back to the start, and tests the
@@ -132,14 +132,14 @@ Settle down, the world hasn't ended. This is how a `for` loop works - it has
 three parts in the condition statement. 
 
 First, you tell it a starting point (`customers = 50`); this code is run once
-only before part  two is checked for the first time.
+only before part two is checked for the first time.
 
 Second, you tell it a condition to test for (`customers > 0`); this is like the
-condition in the while loop - it is checked every time before the code in the
+condition in the `while` loop - it is checked every time before the code in the
 loop is run, and the code in the loop runs only if the condition is true. 
 
-Finally, you tell it what to do at the end of each loop (`customers = customers - 1`);
-this is run every time after the code in the loop finishes, but before the
+Finally, you tell it what to do at the end of each loop (`customers = customers - 1`).
+This is run every time after the code in the block finishes, but before the
 condition is checked again. This lets you set things up easily for the next loop.
 
 In reality we've done nothing different than we did with the `while` loop, only
@@ -147,7 +147,7 @@ now the computer will tell you when you've missed one of the parts, rather than
 try to run forever.
 
 ###I want to stop again, this is hard
-Don't give up just yet. Let's simplify it down a a little more. Pretend for a
+Don't give up just yet. Let's simplify it down a little more. Pretend for a
 moment that this was how your code looked.
 
 ```
